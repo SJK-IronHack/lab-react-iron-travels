@@ -1,5 +1,10 @@
+import React from "react";
 import logo from "./assets/logo.png";
 import "./App.css";
+import TravelList from "./components/TravelList";
+
+// Correct import path for travel-plans.json
+import travelData from "./assets/travel-plans.json";
 
 function App() {
   return (
@@ -11,7 +16,7 @@ function App() {
       <h3 className="text-iron">Tailored Travel Plans for Ironhackers</h3>
 
       {/* RENDER YOUR LIST COMPONENT HERE */}
-      
+      <TravelList travelData={travelData} />
     </>
   );
 }
